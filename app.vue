@@ -8,12 +8,9 @@
     :windowWidth="modalWindow1.windowWidth.value"
   >
     <template v-slot:content>
-      <!-- <img src="./assets/images/chips.png" alt="chips" class="chips" /> -->
+      <img src="./assets/images/chips.png" alt="chips" class="chips" />
       <div class="content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
       </div>
     </template>
   </TheModalWindow>
@@ -128,7 +125,7 @@
       </button>
     </template>
   </TheModalWindow>
-  <div class="btnsToShow">
+  <div class="btns-to-show">
     <button @click="modalWindow1.changeVisibility" class="button">
       Модальное окно с таймером
     </button>
@@ -203,7 +200,7 @@ export default {
 <style scoped>
 .content {
   padding: 10px 15px;
-  margin-top: 35px;
+  margin-top: 10px;
 }
 .align {
   text-align: left;
@@ -266,13 +263,13 @@ input {
   font-weight: bold;
   margin: 0;
 }
-.btnsToShow {
+.btns-to-show {
   margin: auto;
   margin-top: 50px;
-  width: 900px;
+  width: 100%;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .button {
   width: 200px;
@@ -293,5 +290,16 @@ input {
 .button:hover {
   color: #a3ccf8;
   transition: ease 0.7s;
+}
+
+@media (max-width: 1000px) {
+  .btns-to-show {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button {
+    margin-bottom: 16px;
+  }
 }
 </style>
