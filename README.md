@@ -1,63 +1,24 @@
-# Nuxt 3 Minimal Starter
+# Тестовое задание от компании Playvision
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Задача - создать переиспользуемый компонент модального окна и организовать его при условии большого количества кастомизации в проекте.
 
-## Setup
+Технологии:
+- Vue 3
+- Composition API
+- Nuxt
+- TypeScript
+- HTML
+- CSS
 
-Make sure to install the dependencies:
+# Описание проделанной работы
 
-```bash
-# npm
-npm install
+- Добавлен функционал закрытия модального окна: по клику на крестик, по истечении таймера, по клику на кнопки в футере.
+Тип закрытия определяется в конфигурации перед созданием модального окна.
 
-# pnpm
-pnpm install
+- Компонент можно кастомизировать с помощью слотов. 
 
-# yarn
-yarn install
-```
+- Модальному окну можно задавать ширину с помощью пропса
 
-## Development Server
+# Ссылка на Netlify
+https://guileless-gaufre-d775ab.netlify.app/
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
